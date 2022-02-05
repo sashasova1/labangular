@@ -1,0 +1,36 @@
+label {
+    font-weight: bold;
+    padding-bottom: .5rem;
+    padding-top: 1rem;
+    display: inline-block;
+  }
+  
+  button {
+    max-width: 300px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .btn {
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .btn {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .btn {
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .btn {
+      font-size: 11px;
+    }
+  }
+  
+  

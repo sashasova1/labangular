@@ -1,0 +1,39 @@
+<form [formGroup]="addForm" (ngSubmit)="addNewContact(this.addForm.value)" novalidate>
+
+    <label for="name">Name: </label>
+    <input id="name" type="text" formControlName="name">
+    <br>
+    <label for="surname">Surname: </label>
+    <input id="surname" type="text" formControlName="surname">
+    <br>
+    <label for="email">Email: </label>
+    <input id="email" type="text" formControlName="email">
+    <br>
+    <label for="number">Number: </label>
+    <input id="number" type="text" formControlName="number">
+    <br>
+    <div *ngIf="!name?.valid && (name?.dirty || name?.touched)">
+        <div [hidden]="!name.errors?.['required']">
+            Name is required
+        </div>
+    </div>
+
+    <div *ngIf="!surname?.valid && (surname?.dirty || surname?.touched)">
+        <div [hidden]="!surname.errors?.['required']">
+            Surname is required
+        </div>
+    </div>
+
+    <div *ngIf="!number?.valid && (number?.dirty || number?.touched)">
+        <div [hidden]="!number.errors?.['required']">
+            Number is required
+        </div>
+        <div [hidden]="!number.errors?.['pattern']">
+            Only numbers allowed
+        </div>
+    </div>
+
+    <p>Form Status: {{ addForm.status }}</p>
+    <button class="btn btn-success" [disabled]="!addForm.valid">Додати</button>
+
+</form>

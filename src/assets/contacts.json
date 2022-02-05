@@ -1,0 +1,25 @@
+{
+    "contacts": [
+        {
+            "id": 1,
+            "name": "Олег",
+            "surname": "Малімон",
+            "email": "oleg@phone.ua",
+            "number": "0653688528"
+        },
+        {
+            "id": 2,
+            "name": "Олег",
+            "surname": "Назарчук",
+            "email": "nazar@phone.ua",
+            "number": "0959344655"
+        },
+        {
+            "id": 3,
+            "name": "Максим",
+            "surname": "Малімон",
+            "email": "-",
+            "number": "0967456123"
+        }
+    ]
+}

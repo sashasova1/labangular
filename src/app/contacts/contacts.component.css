@@ -1,0 +1,29 @@
+  a:hover {
+    cursor: pointer;
+  }
+
+  /* Responsive Styles */
+
+  @media screen and (max-width: 1200px) {
+    :host, .btn {
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    :host, .btn {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    :host, .btn {
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    :host, .btn {
+      font-size: 11px;
+    }
+  }
